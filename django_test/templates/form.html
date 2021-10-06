@@ -1,0 +1,10 @@
+{% comment %} <div class="center-column"> {% endcomment %}
+<h2 align='center'> TODO App </h2>
+<div class="addbody">
+    <form method='POST' action='/' >  {% csrf_token %}
+    <div >
+        {{ form.title}}
+        <input class="btn btn-info" type='submit' value='Save' />
+    </div>
+{% comment %} </div> {% endcomment %}
+</form>
